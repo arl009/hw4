@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- EXTRA CREDIT -->
+    <meta name="description" content="Personal portfolio to show Andric Li technical skills in computer science">
+
+    <title>Sample Website</title>
+	<link rel="icon" type="image/png" href="media/favicon-16x16.png" sizes="16x16">
+	<link rel="stylesheet" href="form-no-js.css">
+
+    <script>
+        console.log('Test Page Load');
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="home">Andric's Personal Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contactMe">Contact Me</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm currently studying Computer Science at UCSD and I have experience and interest in Web Development, App Development, XR, and AR.</p>
+        </section>
+        <br>
+        <section id="experience">
+            <h2>Work Experience / Projects</h2>
+
+            <div class="wrapper">
+                <article>
+                    <h3>Development in VR</h3>
+
+                    <picture>
+                        <source srcset="media/VR_Compressed.jpg" media="(orientation: landscape)">
+                        <img src="media/VR.jpg" alt="Metaverse User Interface">
+                    </picture>
+                    <ul>
+                        <li>Worked on creating an immersive 3D World (Metaverse) where people can interact with each other in real time on desktop and mobile devices using the browser as well as on VR devices</li>
+                        <li>Ported over features on the browser to work on VR platforms such as live chat, voice chat, and facecam video</li>
+                        <li>Architected new UI capabilities for better user experience and also easier future future development</li>
+                        <li>Tools/Frameworks: TypeScript, BabylonJS, JavaScript, Git, Github</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Tarot Reading Web Application</h3>
+                    <picture>
+                        <source srcset="media/Tarot_Compressed.jpg" media="(orientation: landscape)">
+                        <img src="media/Tarot.jpg" alt="Tarot Card Selection">
+                    </picture>
+                    <ul>
+                        <li>The project was done to gain a better understanding on software development practices by integrating CI/CD
+                            and different types of testing while following the AGILE software development cycle</li>
+                        <li>Tools/Frameworks: JavaScript, HTML, CSS, Git, Jest, JSDocs</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Social Media Gym Mobile App</h3>
+                    <img src="media/LandscapeGym.jpg" alt="Gym App Homepage">      
+                    <ul>
+                        <li>Developed an app to help people keep track of their fitness progress and help connect them with gym goers</li>
+                        <li>Designed and created 5+ UI screens using React Native and CSS</li>
+                        <li>Organized biweekly sprint meetings with 6+ people to communicate between software and design teams</li>
+                        <li>Tools/Frameworks: React Native, Expo, Git, CSS</li>
+                    </ul>
+                </article>
+            </div>
+
+        </section>
+        <br>
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>List of Skills</h3>
+            <ol>
+                <li><strong>Programming Languages:</strong> JavaScript / Java / C# / Python / C++ / TypeScript / HTML / CSS / SQL</li>
+                <li><strong>Tools:</strong> Git / Gitlab / BabylonJs / React / Slack</li>
+                <li><strong>Engineering Process / Env:</strong> AGILE, CI/CD</li>
+            </ol>
+            <h3>Resume</h3>
+            <p><a href="https://drive.google.com/file/d/1C-6PcZlY1bdxMHBeo2EBbYRTLESVV0fI/view?usp=sharing">Resume Link</a></p>
+            <!-- <iframe src="media/Andric_Li_Resume_2023.pdf" title="Iframe for Resume"></iframe> -->
+            
+        </section>
+        <br>
+        <section id="contactMe">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:andrictt@gmail.com">andrictt@gmail.com</a></p>
+            <p><a href="https://github.com/arl009">Github</a></p>
+            <p><a href="https://www.linkedin.com/in/andric-li-2bb9471aa/">LinkedIn</a></p>
+            <p><a href="https://www.facebook.com/profile.php?id=100009269760052">Facebook</a></p>
+            <p><a href="https://www.instagram.com/anderick_lee/">Instagram</a></p>
+        </section>
+        <br>
+        <section id="form">
+            <h2>Contact Form</h2>
+            <form action="https://httpbin.org/post" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required pattern="[A-Za-z\s]+">
+                <output for="name" id="nameError" class="error"></output>
+                <output for="name" id="nameInfo"></output>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}">
+                <output for="email" id="emailError" class="error"></output>
+                <output for="email" id="emailInfo"></output>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="user_comments" required minlength="10" maxlength="500" pattern="[\w\s.,!?']+"></textarea>
+                <output for="comments" id="commentsError" class="error"></output>
+                <output for="comments" id="commentsInfo"></output>
+              
+                <input type="submit" value="Submit">
+                <input type="hidden" name="possible_bot" value="true">
+              </form>
+        </section>
+    </main>
+    <footer>
+        <p><i>Copyright &copy; 2023. All rights reserved.</i></p>
+    </footer>
+</body>
+</html>
