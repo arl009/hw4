@@ -49,6 +49,9 @@ body {
     background: var(--background-color, #f4f4f4);
     color: var(--secondary-color, black);
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
@@ -158,6 +161,7 @@ footer {
     padding: 1.5rem;
     background: var(--secondary-color, black);
     color: var(--primary-color, white);
+    margin-top: auto;
 }
 
 .wrapper {
