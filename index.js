@@ -12,6 +12,7 @@ const emailError = document.getElementById("emailError");
 const emailInfo = document.getElementById("emailInfo");
 const commentsError = document.getElementById("commentsError");
 const commentsInfo = document.getElementById("commentsInfo");
+const body = document.getElementsByTagName("body")[0];
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -245,4 +246,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // Event listener for the button
   themeToggleBtn.addEventListener("click", toggleTheme);
+  body.classList.remove("hidden");
 });
