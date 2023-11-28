@@ -15,6 +15,24 @@
     font-style: normal;
 }
 
+.button {
+    background-color: var(--secondary-color, black);
+    border: none;
+    color: var(--primary-color, white);
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 100rem;
+  }
+  
+.button:hover {
+    background-color: #777777;
+}
+
 /* Body */
 body {
     font-family: var(--font-primary, --font-secondary);
@@ -173,7 +191,7 @@ output {
 .error {
     color: red;
 }
-/*
+
 input[type="text"]:invalid, input[type="email"]:invalid, textarea:invalid {
     border: 2px solid red;
 }
@@ -181,7 +199,7 @@ input[type="text"]:invalid, input[type="email"]:invalid, textarea:invalid {
 input[type="text"]:valid, input[type="email"]:valid, textarea:valid {
     border: 2px solid green;
 }
-*/
+
 input[type="text"]:invalid + output::after{
     content: "Enter a valid username"
 }

@@ -36,9 +36,9 @@
     border-radius: 100rem;
   }
   
-  .button:hover {
+.button:hover {
     background-color: #777777;
-  }
+}
 
 /* Body */
 body {
