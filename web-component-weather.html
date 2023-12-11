@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- EXTRA CREDIT -->
+    <meta name="description" content="Personal portfolio to show Andric Li technical skills in computer science">
+
+    <title>Sample Website</title>
+	<link rel="icon" type="image/png" href="media/favicon-16x16.png" sizes="16x16">
+	<link rel="stylesheet" href="form-no-js.css">
+
+    <script>
+        console.log('Test Page Load');
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="home">Andric's Personal Portfolio</h1>
+    </header>
+    <main>
+        <section id="form">
+            <h2>Weather Widget for San Diego</h2>
+            <weather-widget>
+                <p id="weather-info">Loading weather data...</p>
+                <p id="weather-speed"></p>
+                <p id="weather-humidity"></p>
+                <noscript>
+                    <p>Current Weather Conditions Unavailable</p>
+                </noscript>
+            </weather-widget>
+        </section>
+    </main>
+    <footer>
+        <p><i>Copyright &copy; 2023. All rights reserved.</i></p>
+    </footer>
+    <script src="web-component-weather.js"></script>
+</body>
+</html>

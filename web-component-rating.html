@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- EXTRA CREDIT -->
+    <meta name="description" content="Personal portfolio to show Andric Li technical skills in computer science">
+
+    <title>Sample Website</title>
+	<link rel="icon" type="image/png" href="media/favicon-16x16.png" sizes="16x16">
+	<link rel="stylesheet" href="form-no-js.css">
+
+    <script>
+        console.log('Test Page Load');
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="home">Andric's Personal Portfolio</h1>
+    </header>
+    <main>
+        <section id="form">
+            <h2>Rating Widget</h2>
+            <rating-widget>
+                <form action="https://httpbin.org/post" method="POST">
+                    <label for="rating">How Satisfied Are You:</label>
+                    <input type="hidden" name="question" value="How satisfied are you?">
+                    <input type="hidden" name="sentBy" value="HTML">
+                    <input type="number" id="rating" name="rating" min="1" max="5" value="0" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </rating-widget>
+        </section>
+    </main>
+    <footer>
+        <p><i>Copyright &copy; 2023. All rights reserved.</i></p>
+    </footer>
+    <script src="web-component-rating.js"></script>
+</body>
+</html>
